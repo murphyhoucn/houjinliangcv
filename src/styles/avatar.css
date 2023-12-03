@@ -1,0 +1,77 @@
+.avatar {
+  margin: 15px auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+img.user {
+  height: 12em;
+  width: 12em;
+  background-color: #777;
+  box-shadow: 0 0 0 4px #777;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  will-change: transform;
+  -webkit-user-drag: none;
+}
+img.user:hover {
+  cursor: pointer;
+  -webkit-animation: bounceOut 0.4s linear;
+  animation: bounceOut 0.4s linear;
+}
+
+@-webkit-keyframes bounceOut {
+  0% {
+    box-shadow: 0 0 0 3px #777;
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    box-shadow: 0 0 0 1px #777;
+    opacity: 1;
+    transform: scale(0.97);
+  }
+  50% {
+    box-shadow: 0 0 0 6px #777;
+    opacity: 1;
+    transform: scale(1.01);
+  }
+  75% {
+    box-shadow: 0 0 0 3px #777;
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 0 4px #777;
+    opacity: 1;
+  }
+}
+
+@keyframes bounceOut {
+  0% {
+    box-shadow: 0 0 0 3px #777;
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    box-shadow: 0 0 0 1px #777;
+    opacity: 1;
+    transform: scale(0.97);
+  }
+  50% {
+    box-shadow: 0 0 0 6px #777;
+    opacity: 1;
+    transform: scale(1.01);
+  }
+  75% {
+    box-shadow: 0 0 0 3px #777;
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 0 4px #777;
+    opacity: 1;
+  }
+}

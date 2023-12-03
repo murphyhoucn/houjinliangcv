@@ -1,0 +1,302 @@
+/* Resume Typography */
+html {
+  font-size: 100.01%;
+}
+body {
+  background-color: #dedede;
+  font: normal 0.75em/1.5 "Times New Roman", "STSong", "华文宋体", "SimSun",
+    "宋体", system-ui, -apple-system, BlinkMacSystemFont, serif;
+} /*establish 12px font with verticle rhythm*/
+
+/* =header font size */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111;
+  font-family: Arial, "STHeiti", "华文黑体", "SimHei", "黑体", system-ui,
+    -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 1px;
+}
+h1 {
+  border-bottom: 0.07142855em double #444;
+  color: #000;
+  font: normal 3.5em/2 Arial, "STKaiti", "华文楷体", "KaiTi", "楷体", system-ui,
+    -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+  letter-spacing: 10px;
+}
+h2 {
+  color: #000;
+  font-size: 1.5em;
+  letter-spacing: 0.07142855em;
+  /* font-variant: small-caps; */
+} /* 24px / 16px */
+h3 {
+  border-bottom: 0.07142855em solid #333;
+  font-size: 1.25em;
+  line-height: 1.42857em;
+  margin-bottom: 0.375em;
+  margin-top: 1.05357em;
+  position: relative;
+} /* 20px / 16px */
+h4 {
+  font-size: 1.1255em;
+  line-height: 1.2857em;
+  margin-bottom: 0.375em;
+  margin-top: 1.0893em;
+} /* 18px / 16px */
+
+/* =p leading */
+p {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  text-align: justify;
+}
+p strong {
+  font-family: "Times New Roman", "STKaiti", "华文楷体", "KaiTi", "楷体",
+    system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+p + p {
+  margin-top: 1em;
+}
+p + ul {
+  margin-top: 0.85em;
+}
+footer p,
+footer p + p {
+  margin: 0;
+}
+
+/* Layout for Resume */
+/* =header display */
+header,
+footer {
+  clear: both;
+}
+header {
+  padding: 0;
+}
+header h2,
+header p {
+  padding: 0 40px;
+  width: 510px;
+}
+header h1 {
+  text-shadow: 2px 3px 2px #999;
+  margin: 0.2em 0;
+  cursor: pointer;
+}
+
+/* page holder */
+.page {
+  background: #fff;
+  border: 0.07142855em solid #cecece;
+  margin: 0.35714286em auto 1em;
+  padding-bottom: 1.5em;
+  position: relative;
+  width: 960px;
+}
+
+/*h3 {display: inline-block; margin-top: 0; padding-top: 0;}*/
+.time {
+  font-size: 0.75em;
+  font-weight: normal;
+  float: right;
+  margin-top: 0;
+  padding-top: 0;
+  position: absolute;
+  right: 0;
+} /* 16 / 20 */
+
+/* =ul style */
+ul {
+  margin: 0 0.8em;
+  margin-right: 2em;
+  padding-left: 2em;
+}
+ul li {
+  list-style-type: square;
+  position: relative;
+  text-align: justify;
+  margin-top: 5px;
+}
+.technology li div {
+  display: flex;
+}
+.technology li div span {
+  width: 5em;
+}
+.technology li div span + div {
+  flex: 1;
+  padding: 0.5em 2em 0.5em 0.5em;
+}
+ul.employment li > span,
+ul.awards li > span {
+  margin-right: 0.5em;
+}
+
+/* =a styles */
+a:link,
+a:active,
+a:focus,
+a:visited,
+a:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+a:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+}
+
+header,
+header h2,
+header p,
+.page,
+footer {
+  background: #fff;
+  margin: 0 auto;
+  padding: 0;
+  width: 93.75%;
+}
+header {
+  margin-bottom: 0.8em;
+}
+header h2,
+header p {
+  margin-left: 0;
+  padding-left: 0;
+}
+header .contact-info {
+  overflow: hidden;
+}
+header .contact-info p {
+  width: auto;
+}
+header .contact-info .blog {
+  float: left;
+}
+header .contact-info .email {
+  float: right;
+}
+.page .resume_content,
+.page .resume_skills {
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.page .sub-heading,
+.page .content {
+  overflow: hidden;
+}
+article,
+aside {
+  margin: 0 10px;
+  padding: 0;
+}
+b {
+  position: absolute;
+  right: 1em;
+}
+footer {
+  font-size: inherit !important;
+  margin-top: 1em;
+  padding-bottom: 0.8em;
+}
+.beian {
+  margin-top: 1.2em;
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  html,
+  body,
+  .page {
+    border: none !important;
+    color: #444 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    margin: 0;
+    padding: 0;
+    -ms-filter: none !important;
+  }
+  body {
+    background-color: rgb(110, 110, 110) !important;
+  }
+
+  .sub-heading {
+    display: flex;
+    align-items: center;
+  }
+
+  /* page holder */
+  .page {
+    background: #fff;
+    margin: 0.35714286em auto 1em;
+    position: relative;
+    width: 93.75%;
+  } /* 960px / 1024px */
+
+  /* layout padding*/
+  article {
+    margin: 0 20px 0 40px;
+    position: relative;
+  }
+  aside {
+    margin: 0 20px 0 20px;
+    position: relative;
+  }
+  aside h2 {
+    margin-bottom: 1.05357em;
+  }
+
+  /* 2 columm layout */
+  /* column 1: */
+  .page .resume_content {
+    float: left;
+    margin-bottom: 0.35714286em;
+    width: 61.45833%;
+  } /* 590px / 960px */
+  /* column 2: */
+  .page .resume_skills {
+    float: right;
+    width: 34.375%;
+  } /* 270px / 960px */
+  header p {
+    width: 57.291667%;
+  }
+  /* =footer placement */
+  b {
+    font-weight: normal;
+    margin-top: -2px;
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+  }
+  h3 + p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media print {
+  footer {
+    display: none;
+  }
+}
